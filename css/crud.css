@@ -1,0 +1,167 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.crud_form {
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    overflow: auto;
+    display: none;
+}
+
+.form_input {
+    width: 90%;
+    margin: 1rem;
+    margin-left: 0;
+    padding: .7rem;
+    border: 0.2rem solid #ccc;
+    border-radius: .5rem;
+    background-color: rgb(248, 247, 247);
+}
+
+.button {
+    background-color: rgb(0, 39, 180);
+    font-size: 1.2rem;
+    color: white;
+    width: 95%;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.add {
+    background-color: #000;
+    font-size: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+
+.nav {
+    padding: 5rem;
+    padding-bottom: 0;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.uno {
+    grid-column: 1/2;
+}
+.tres {
+    grid-column: 3/4;
+}
+.crud_table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Cabecera de la tabla */
+.table_header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Celdas de la tabla */
+.table_body td {
+    padding: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 8px;
+}
+
+/* Efecto de hover en las filas */
+.table_body tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+
+.table_body :nth-child(8) {
+    display: flex;
+    justify-content: space-around;
+}
+.edit, .delete {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;  /* Centra el texto dentro del botón */
+    justify-content: center;  /* Asegura que el texto esté centrado */
+    height: 2rem;  /* Ajustamos la altura del botón */
+    padding: 0 1rem;  /* Padding izquierdo y derecho */
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;  /* Ajustamos el tamaño de la fuente */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.23);
+    transition: background-color 0.3s ease;
+}
+
+/* Color y fondo para el botón de editar */
+.edit {
+    background: linear-gradient(90deg, #f7ea00, #f7ea00);
+}
+
+/* Color y fondo para el botón de eliminar */
+.delete {
+    background: linear-gradient(-90deg, #e70101, #f51a1a);
+}
+
+/* Efecto de hover para botones */
+.edit:hover {
+    background: #e0d900;  /* Cambia el color al pasar el mouse */
+}
+
+.delete:hover {
+    background: #d32f2f;  /* Cambia el color al pasar el mouse */
+}
+
+#logoutBtn {
+    background-color: #000;
+    font-size: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+#consulta {
+    padding: 0.8rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/crud.css">
+    <title>Registro de Usuarios</title>
+</head>
+<body>
+   
+    <main class="container">
+        <nav class="nav">
+            <div class="uno">
+                <button id="add" class="add">Add User</button>
+            </div>
+         
+            <h2>Agregar Datos de Usuario</h2>
+            <div class="tres">
+                <input type="text" placeholder="Buscar..." id="consulta">
+                <button id="logoutBtn">Cerrar Sesión</button>
+            </div>
+            
+        </nav>
+    
+        <section class="crud">
+            <form action="" id="formRegister" class="crud_form">
+                <h2>Registrar Usuario</h2>
+                <input type="text" placeholder="Número de Documento" id="idInput" class="form_input">
+                <input type="text" placeholder="Nombre" id="nameInput" class="form_input">
+                <input type="text" placeholder="Edad" id="ageInput" class="form_input">
+                <input type="text" placeholder="Ciudad" id="cityInput" class="form_input">
+                <input type="email" placeholder="Correo" id="emailInput" class="form_input">
+                <input type="number" placeholder="Teléfono" id="phoneInput" class="form_input">
+                <input type="date" id="dateInput" class="form_input">
+                <button type="submit" id="submitButton" class="button">Agregar</button>
+            </form>
+    
+            <table class="crud_table">
+                <thead>
+                    <tr>
+                        <th class="table_header">Documento</th>
+                        <th class="table_header">Nombre</th>
+                        <th class="table_header">Edad</th>
+                        <th class="table_header">Ciudad</th>
+                        <th class="table_header">Correo</th>
+                        <th class="table_header">Teléfono</th>
+                        <th class="table_header">Fecha</th>
+                        <th class="table_header">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body" class="table_body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./js/crud.js"></script>
+</body>
+</html>

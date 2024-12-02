@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/formulario.css">
+    
+    <title>Formularios R.E</title>
+</head>
+<body>
+
+ 
+    <div class="card" id="card">
+        <div class="form" id="registro-form">
+            <form id="signUp" action="" method="get">
+                <h2 id="titulo">Registro</h2>
+                <input type="text" id="name" placeholder="Nombre completo" required>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+                <div class="toggle-btn" onclick="toggleForm()">¿Ya tienes una cuenta? Inicia sesión</div>
+            </form>
+         
+        </div>
+        
+        <div class="form" id="inicio-form">
+            <form id="signIn" action="" method="get">
+                <h2 id="titulo-inicio">Iniciar sesión</h2>
+                <input type="email" id="emailI" placeholder="Correo electrónico" required>
+                <input type="password" id="passwordI" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+                <div class="toggle-btn" onclick="toggleForm()">¿No tienes una cuenta? Regístrate</div>
+            </form>
+           
+        </div>
+    </div>
+    
+<script src="./js/registro.js"></script>
+</body> 
+</html>
